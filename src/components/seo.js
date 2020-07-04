@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
+import imageSeo from "../images/gatsby-astronaut.png"
 function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
@@ -36,8 +36,36 @@ function SEO({ description, lang, meta, title, image }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `robots`,
+          content: `index, follow`,
+        },
+        {
+          name: `author`,
+          content: `Jonathan Martínez`,
+        },
+        {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          itemprop: `name`,
+          content: title,
+        },
+        {
+          name: `keywords`,
+          content: `developer, WordPress, JavaScript, frontend, web developer, developer españa, desarrollador web, ui developer, maquetador web`,
+        },
+        {
+          name: `publisher`,
+          content: `Jonathan Martínez (https://jommartinez.com)`,
+        },
+        {
+          itemprop: `description`,
+          content: metaDescription,
+        },
+        {
+          itemprop: `image`,
+          content: `${process.env.URL}${imageSeo}`,
         },
         {
           property: `og:title`,
@@ -50,6 +78,10 @@ function SEO({ description, lang, meta, title, image }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: `${process.env.URL}${imageSeo}`,
         },
         {
           name: `twitter:card`,
@@ -66,6 +98,10 @@ function SEO({ description, lang, meta, title, image }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: `${process.env.URL}${imageSeo}`,
         },
       ].concat(meta)}
     />
