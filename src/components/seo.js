@@ -26,14 +26,16 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaTitle = title || site.siteMetadata.title
+  const metaImage =
+    image || `https://unruffled-nightingale-5cdad3.netlify.app/${imageSeo}`
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={metaTitle}
       meta={[
         {
           name: `robots`,
@@ -56,16 +58,12 @@ function SEO({ description, lang, meta, title, image }) {
           content: `developer, WordPress, JavaScript, frontend, web developer, developer españa, desarrollador web, ui developer, maquetador web`,
         },
         {
-          name: `publisher`,
-          content: `Jonathan Martínez (https://jommartinez.com)`,
-        },
-        {
           itemprop: `description`,
           content: metaDescription,
         },
         {
           itemprop: `image`,
-          content: `${process.env.URL}${imageSeo}`,
+          content: metaImage,
         },
         {
           property: `og:title`,
@@ -81,7 +79,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:image`,
-          content: `${process.env.URL}${imageSeo}`,
+          content: metaImage,
         },
         {
           name: `twitter:card`,
@@ -101,7 +99,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:image`,
-          content: `${process.env.URL}${imageSeo}`,
+          content: metaImage,
         },
       ].concat(meta)}
     />
@@ -111,6 +109,7 @@ function SEO({ description, lang, meta, title, image }) {
 SEO.defaultProps = {
   lang: `es`,
   meta: [],
+  title: ``,
   description: ``,
 }
 
