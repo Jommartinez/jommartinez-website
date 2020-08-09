@@ -27,6 +27,44 @@ export default function Layout({ children }) {
     <>
       <Global
         styles={css`
+          @font-face {
+            font-family: "butler";
+            src: url("../fonts/butler/Butler-Black.woff2") format("woff2"),
+              url("../fonts/butler/Butler-Black.woff") format("woff");
+            font-weight: 900;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: "manrope-bold";
+            src: url("../fonts/manrope/Manrope-Bold.woff2") format("woff2"),
+              url("../fonts/manrope/Manrope-Bold.woff") format("woff");
+            font-weight: 700;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: "manrope-light";
+            src: url("../fonts/manrope/Manrope-Light.woff2") format("woff2"),
+              url("../fonts/manrope/Manrope-Light.woff") format("woff");
+            font-weight: 300;
+            font-style: normal;
+          }
+
+          @font-face {
+            font-family: "manrope-regular";
+            src: url("../fonts/manrope/Manrope-Regular.woff2") format("woff2"),
+              url("../fonts/manrope/Manrope-Regular.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+          }
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
           :root {
             --dark: #333a3f;
             --light: #f6f6f7;
@@ -44,6 +82,11 @@ export default function Layout({ children }) {
             --yellow: #f5b133;
           }
 
+          .wrapper {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1506px;
+          }
           @media (prefers-color-scheme: dark) {
             :root {
               --dark: #333a3f;
@@ -53,7 +96,7 @@ export default function Layout({ children }) {
           }
         `}
       />
-      <div className={mainClass}>
+      <div className={`website ${mainClass}`}>
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
         <main>{children}</main>
         <Footer />

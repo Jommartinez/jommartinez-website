@@ -1,11 +1,17 @@
 import React from "react"
 import { HeaderStyled } from "./HeaderStyle"
-import Switch from "../Switch"
+import Logo from "../ui/Logo"
+import RightHeader from "../ui/RightHeader"
 
 function Header({ setDarkMode, darkMode }) {
   return (
     <HeaderStyled>
-      <Switch setDarkMode={setDarkMode} darkMode={darkMode} />
+      <div className="wrapper">
+        <div className="content">
+          <Logo />
+          <RightHeader setDarkMode={setDarkMode} darkMode={darkMode} />
+        </div>
+      </div>
     </HeaderStyled>
   )
 }
