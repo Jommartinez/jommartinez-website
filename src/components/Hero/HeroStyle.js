@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 export const HeroStyled = styled.section`
   background: var(--dark);
   color: var(--light);
-  padding: 16.25rem 0 6.25rem 0;
+  padding: 25.25rem 0 6.25rem 0;
   .info {
     display: flex;
     justify-content: space-between;

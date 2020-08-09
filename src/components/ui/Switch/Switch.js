@@ -8,11 +8,11 @@ export default function Switch({ setDarkMode, darkMode }) {
 
   return (
     <SwitchStyled>
-      <p onClick={handleClick}>
+      <div onClick={handleClick}>
         <div className="moon">
           {darkMode ? <span>dark</span> : <span>light</span>}
         </div>
-      </p>
+      </div>
     </SwitchStyled>
   )
 }
