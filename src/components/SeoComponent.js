@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import imageSeo from "../images/gatsby-astronaut.png"
-function Seo({ description, lang, meta, title, image }) {
+function SeoComponent({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -106,18 +106,18 @@ function Seo({ description, lang, meta, title, image }) {
   )
 }
 
-Seo.defaultProps = {
+SeoComponent.defaultProps = {
   lang: `es`,
   meta: [],
   title: ``,
   description: ``,
 }
 
-Seo.propTypes = {
+SeoComponent.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 }
 
-export default Seo
+export default SeoComponent
