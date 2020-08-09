@@ -28,7 +28,7 @@ function SEO({ description, lang, meta, title, image }) {
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
   const metaImage =
-    image || `https://unruffled-nightingale-5cdad3.netlify.app/${imageSeo}`
+    image || `https://distracted-fermat-b7befd.netlify.app/${imageSeo}`
 
   return (
     <Helmet

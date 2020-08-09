@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `http://localhost:8000/`,
+        siteUrl: process.env.URL,
         stripQueryString: true,
       },
     },
