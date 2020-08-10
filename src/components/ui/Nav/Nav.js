@@ -7,16 +7,16 @@ function Nav() {
     <NavStyled>
       <ul>
         <li>
-          <Link to="">servicios_</Link>
+          <Link to="/">servicios_</Link>
         </li>
         <li>
-          <Link to="">proyectos_</Link>
+          <Link to="/">proyectos_</Link>
         </li>
         <li>
-          <Link to="">sobre mí_</Link>
+          <Link to="/">sobre mí_</Link>
         </li>
         <li>
-          <Link to="">contacto_</Link>
+          <Link to="/">contacto_</Link>
         </li>
       </ul>
     </NavStyled>

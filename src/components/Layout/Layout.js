@@ -27,38 +27,6 @@ export default function Layout({ children }) {
     <>
       <Global
         styles={css`
-          @font-face {
-            font-family: "butler";
-            src: url("../fonts/Butler-Black.woff2") format("woff2"),
-              url("../fonts/Butler-Black.woff") format("woff");
-            font-weight: 900;
-            font-style: normal;
-          }
-
-          @font-face {
-            font-family: "manrope-bold";
-            src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
-              url("../fonts/Manrope-Bold.woff") format("woff");
-            font-weight: 700;
-            font-style: normal;
-          }
-
-          @font-face {
-            font-family: "manrope-light";
-            src: url("../fonts/Manrope-Light.woff2") format("woff2"),
-              url("../fonts/Manrope-Light.woff") format("woff");
-            font-weight: 300;
-            font-style: normal;
-          }
-
-          @font-face {
-            font-family: "manrope-regular";
-            src: url("../fonts/Manrope-Regular.woff2") format("woff2"),
-              url("../fonts/Manrope-Regular.woff") format("woff");
-            font-weight: 400;
-            font-style: normal;
-          }
-
           * {
             margin: 0;
             padding: 0;
