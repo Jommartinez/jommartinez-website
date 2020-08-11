@@ -1,15 +1,23 @@
 import styled from "@emotion/styled"
 
 export const NavStyled = styled.nav`
-  display: none;
+  font-size: var(--fontSizeP);
+  font-family: var(--manrope);
+  @media screen and (min-width: 992px) {
+    p {
+      display: none;
+    }
+  }
   ul {
     display: flex;
     list-style: none;
+    display: none;
+    @media screen and (min-width: 992px) {
+      display: flex;
+    }
     li {
       margin-right: 2.5rem;
       a {
-        font-family: "manrope-light", sans-serif;
-        font-size: 1.375rem;
         text-decoration: none;
         color: var(--light);
       }

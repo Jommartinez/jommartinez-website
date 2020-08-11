@@ -43,6 +43,27 @@ export default function Layout({ children }) {
             --lineHeightP: 1.313rem;
             --fontSizeH1: 3.125rem;
           }
+          @media screen and (min-width: 768px) {
+            :root {
+              --fontSizeP: 1.333rem;
+              --lineHeightP: 1.8rem;
+              --fontSizeH1: 5rem;
+            }
+          }
+          @media screen and (min-width: 992px) {
+            :root {
+              --fontSizeP: 1.375rem;
+              --lineHeightP: 1.875rem;
+              --fontSizeH1: 5.938rem;
+            }
+          }
+          @media screen and (min-width: 1200px) {
+            :root {
+              --fontSizeP: 1.563rem;
+              --lineHeightP: 2.188rem;
+              --fontSizeH1: 7.625rem;
+            }
+          }
           .is-dark-mode {
             --dark: #333a3f;
             --light: #f6f6f7;
