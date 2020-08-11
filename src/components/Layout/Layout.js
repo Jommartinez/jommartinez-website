@@ -37,6 +37,11 @@ export default function Layout({ children }) {
             --dark: #333a3f;
             --light: #f6f6f7;
             --yellow: #f5b133;
+            --manrope: "manrope-light", sans-serif;
+            --butler: "butler";
+            --fontSizeP: 0.938rem;
+            --lineHeightP: 1.313rem;
+            --fontSizeH1: 3.125rem;
           }
           .is-dark-mode {
             --dark: #333a3f;
@@ -49,11 +54,11 @@ export default function Layout({ children }) {
             --light: #333a3f;
             --yellow: #f5b133;
           }
-
           .wrapper {
             margin: 0 auto;
             width: 100%;
             max-width: 1506px;
+            padding: 0 2rem;
           }
           @media (prefers-color-scheme: dark) {
             :root {

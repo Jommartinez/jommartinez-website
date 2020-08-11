@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 
 export const NavStyled = styled.nav`
+  display: none;
   ul {
     display: flex;
     list-style: none;
