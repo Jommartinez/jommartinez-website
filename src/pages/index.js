@@ -10,7 +10,6 @@ const IndexPage = () => (
       description="descripcion de la página"
     />
     <Hero />
-    <h2>{`${process.env.API_URL}`}</h2>
   </Layout>
 )
 

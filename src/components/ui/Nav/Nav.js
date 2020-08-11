@@ -1,8 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { NavStyled } from "./NavStyle"
 import { Link } from "gatsby"
+import { gsap } from "gsap"
 
 function Nav() {
+  useEffect(() => {
+    gsap.fromTo(
+      "nav ul li",
+      { autoAlpha: 0, y: 20 },
+      { y: 0, autoAlpha: 1, duration: 0.35, stagger: 0.3 }
+    )
+  })
+
   return (
     <NavStyled>
       <ul>

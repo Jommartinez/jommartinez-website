@@ -33,7 +33,7 @@ function Hero() {
       y: 10,
       opacity: 0,
       duration: 0.35,
-      delay: 2,
+      delay: 1.2,
       scrollTrigger: {
         markers: true,
         trigger: heroRef.current,
