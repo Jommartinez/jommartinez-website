@@ -13,6 +13,10 @@ export const SwitchStyled = styled.div`
       width: 46px;
       height: 20px;
     }
+    @media screen and (min-width: 1920px) {
+      width: 56px;
+      height: 24px;
+    }
   }
   .selected {
     position: absolute;
@@ -25,6 +29,11 @@ export const SwitchStyled = styled.div`
       height: 0.9rem;
       top: 0;
     }
+    @media screen and (min-width: 1920px) {
+      width: 1.3rem;
+      height: 1.3rem;
+      top: 2px;
+    }
     &.moon {
       right: 1px;
     }
@@ -32,6 +41,9 @@ export const SwitchStyled = styled.div`
       right: 23px;
       @media screen and (min-width: 768px) {
         right: 27px;
+      }
+      @media screen and (min-width: 1920px) {
+        right: 31px;
       }
     }
     svg {

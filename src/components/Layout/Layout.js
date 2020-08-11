@@ -64,6 +64,14 @@ export default function Layout({ children }) {
               --fontSizeH1: 7.625rem;
             }
           }
+          @media screen and (min-width: 1920px) {
+            :root {
+              --fontSizeP: 2.125rem;
+              --lineHeightP: 2.875rem;
+              --fontSizeH1: 12.188rem;
+            }
+          }
+
           .is-dark-mode {
             --dark: #333a3f;
             --light: #f6f6f7;
@@ -80,6 +88,9 @@ export default function Layout({ children }) {
             width: 100%;
             max-width: 1506px;
             padding: 0 2rem;
+            @media screen and (min-width: 992px) {
+              padding: 0 3rem;
+            }
           }
           @media (prefers-color-scheme: dark) {
             :root {

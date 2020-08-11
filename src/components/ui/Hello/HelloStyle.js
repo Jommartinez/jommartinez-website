@@ -21,6 +21,9 @@ export const HelloStyled = styled.div`
     @media screen and (min-width: 992px) {
       max-width: 18.125rem;
     }
+    @media screen and (min-width: 1920px) {
+      max-width: 30.125rem;
+    }
     span {
       margin-top: 0.8rem;
       display: block;
@@ -49,6 +52,9 @@ export const HelloStyled = styled.div`
       @media screen and (min-width: 1200px) {
         line-height: 5rem;
       }
+      @media screen and (min-width: 1920px) {
+        line-height: 8rem;
+      }
       span.nameT {
         margin-left: 0.35rem;
       }
@@ -75,6 +81,11 @@ export const HelloStyled = styled.div`
       @media screen and (min-width: 992px) {
         width: 3.188rem;
         height: 0.7rem;
+      }
+      @media screen and (min-width: 1920px) {
+        width: 6rem;
+        height: 1rem;
+        border: 2px solid var(--yellow);
       }
     }
   }
