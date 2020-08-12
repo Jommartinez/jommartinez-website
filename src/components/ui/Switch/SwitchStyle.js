@@ -35,7 +35,7 @@ export const SwitchStyled = styled.div`
       top: 2px;
     }
     &.moon {
-      right: 1px;
+      right: 0px;
     }
     &.sun {
       right: 23px;
