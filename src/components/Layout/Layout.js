@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import Header from "../Header"
 import Footer from "../Footer"
 import { Global, css } from "@emotion/core"
+import "./layout.css"
 
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(false)
@@ -45,8 +46,8 @@ export default function Layout({ children }) {
           }
           @media screen and (min-width: 768px) {
             :root {
-              --fontSizeP: 1.333rem;
-              --lineHeightP: 1.8rem;
+              --fontSizeP: 1.25rem;
+              --lineHeightP: 1.688rem;
               --fontSizeH1: 5rem;
             }
           }
