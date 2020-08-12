@@ -6,6 +6,7 @@ import BgTitle from "../components/BgTitle"
 import TextBlock from "../components/TextBlock"
 import SectionTitleLeft from "../components/SectionTitleLeft"
 import SectionTitleRight from "../components/SectionTitleRight"
+import TitleRight from "../components/ui/TitleRight"
 
 const IndexPage = () => (
   <Layout>
@@ -30,6 +31,9 @@ const IndexPage = () => (
     </TextBlock>
     <SectionTitleLeft />
     <SectionTitleRight />
+    <TitleRight>
+      <h3>Proyectos_</h3>
+    </TitleRight>
   </Layout>
 )
 

@@ -37,6 +37,7 @@ export const BgTitleStyled = styled.section`
       position: relative;
       &::before {
         content: "";
+        z-index: 9;
         position: absolute;
         width: 30px;
         height: 55px;
@@ -64,6 +65,7 @@ export const BgTitleStyled = styled.section`
       }
       &::after {
         content: "";
+        z-index: 9;
         position: absolute;
         width: 30px;
         height: 55px;
