@@ -9,6 +9,8 @@ export const BgTitleStyled = styled.section`
     position: absolute;
     width: 100%;
     height: 120%;
+    object-fit: cover;
+    top: 0;
   }
   h2 {
     padding: 2rem 0;

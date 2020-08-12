@@ -33,7 +33,6 @@ export default function Layout({ children }) {
             padding: 0;
             box-sizing: border-box;
           }
-
           :root {
             --dark: #333a3f;
             --light: #f6f6f7;
@@ -122,6 +121,12 @@ export default function Layout({ children }) {
               --dark: #333a3f;
               --light: #f6f6f7;
               --yellow: #f5b133;
+            }
+          }
+          body {
+            background-color: var(--dark);
+            img {
+              display: block;
             }
           }
         `}

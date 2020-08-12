@@ -128,6 +128,7 @@ export const SectionTitleRightStyled = styled.section`
     font-size: var(--fontSizeP);
     line-height: var(--lineHeightP);
     order: 2;
+    text-align: right;
     @media screen and (min-width: 1200px) {
       order: 1;
       flex: 0 0 50%;

@@ -7,6 +7,7 @@ import TextBlock from "../components/TextBlock"
 import SectionTitleLeft from "../components/SectionTitleLeft"
 import SectionTitleRight from "../components/SectionTitleRight"
 import TitleRight from "../components/ui/TitleRight"
+import ProjectsHome from "../components/ProjectsHome"
 
 const IndexPage = () => (
   <Layout>
@@ -34,6 +35,7 @@ const IndexPage = () => (
     <TitleRight>
       <h3>Proyectos_</h3>
     </TitleRight>
+    <ProjectsHome />
   </Layout>
 )
 
