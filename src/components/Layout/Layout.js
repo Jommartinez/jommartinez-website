@@ -39,16 +39,28 @@ export default function Layout({ children }) {
             --light: #f6f6f7;
             --yellow: #f5b133;
             --manrope: "manrope-light", sans-serif;
+            --manropeBold: "manrope-bold", sans-serif;
+            --manropeRegular: "manrope-regular", sans-serif;
             --butler: "butler";
             --fontSizeP: 0.938rem;
             --lineHeightP: 1.313rem;
             --fontSizeH1: 3.125rem;
+            --fontSizeH2: 1.375rem;
+          }
+          strong {
+            font-family: var(--manropeBold);
+          }
+          @media screen and (min-width: 576px) {
+            :root {
+              --fontSizeH2: 1.875rem;
+            }
           }
           @media screen and (min-width: 768px) {
             :root {
               --fontSizeP: 1.25rem;
               --lineHeightP: 1.688rem;
               --fontSizeH1: 5rem;
+              --fontSizeH2: 3.125rem;
             }
           }
           @media screen and (min-width: 992px) {
@@ -56,6 +68,7 @@ export default function Layout({ children }) {
               --fontSizeP: 1.375rem;
               --lineHeightP: 1.875rem;
               --fontSizeH1: 5.938rem;
+              --fontSizeH2: 4.063rem;
             }
           }
           @media screen and (min-width: 1200px) {
@@ -63,13 +76,15 @@ export default function Layout({ children }) {
               --fontSizeP: 1.563rem;
               --lineHeightP: 2.188rem;
               --fontSizeH1: 7.625rem;
+              --fontSizeH2: 5.313rem;
             }
           }
           @media screen and (min-width: 1920px) {
             :root {
-              --fontSizeP: 2.125rem;
-              --lineHeightP: 2.875rem;
+              --fontSizeP: 1.875rem;
+              --lineHeightP: 2.563rem;
               --fontSizeH1: 12.188rem;
+              --fontSizeH2: 6.25rem;
             }
           }
 
@@ -87,10 +102,19 @@ export default function Layout({ children }) {
           .wrapper {
             margin: 0 auto;
             width: 100%;
-            max-width: 1506px;
+            max-width: 1602px;
             padding: 0 2rem;
             @media screen and (min-width: 992px) {
+              padding: 0 1.938rem;
+              max-width: 992px;
+            }
+            @media screen and (min-width: 1200px) {
+              padding: 0 2.813rem;
+              max-width: 1200px;
+            }
+            @media screen and (min-width: 1920px) {
               padding: 0 3rem;
+              max-width: 1602px;
             }
           }
           @media (prefers-color-scheme: dark) {

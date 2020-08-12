@@ -41,7 +41,7 @@ export const BgTitleStyled = styled.section`
         width: 30px;
         height: 55px;
         background: var(--dark);
-        top: -11px;
+        top: -12px;
         right: 0;
         border-radius: 0 0 25px 25px;
         @media screen and (min-width: 768px) {
@@ -68,7 +68,7 @@ export const BgTitleStyled = styled.section`
         width: 30px;
         height: 55px;
         background: var(--dark);
-        top: -11px;
+        top: -12px;
         right: 45px;
         border-radius: 0 0 25px 25px;
         @media screen and (min-width: 768px) {
