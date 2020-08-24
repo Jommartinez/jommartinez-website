@@ -1,6 +1,8 @@
 import styled from "@emotion/styled"
 export const TitleRightStyled = styled.section`
   background-color: var(--dark);
+  h1,
+  h2,
   h3 {
     font-family: var(--butler);
     font-size: 1.875rem;

@@ -16,7 +16,7 @@ function SectionTitleRight() {
 
         <div className="blockTitle">
           <h2>WordPress developer_</h2>
-          <Link to="/">
+          <Link to="/servicios/#wordpress-developer">
             <span>cuéntame más</span>
             <span className="icon">+</span>
           </Link>

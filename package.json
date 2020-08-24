@@ -20,10 +20,13 @@
     "gatsby-source-wordpress": "^3.3.19",
     "gatsby-transformer-sharp": "^2.5.7",
     "gsap": "^3.4.2",
+    "he": "^1.2.0",
+    "moment": "^2.27.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-moment": "^0.9.7"
   },
   "devDependencies": {
     "prettier": "2.0.5"

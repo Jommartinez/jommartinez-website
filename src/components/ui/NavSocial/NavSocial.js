@@ -1,6 +1,9 @@
 import React from "react"
 import { NavSocialStyled } from "./NavSocialStyle"
 import Linkedin from "../social/Linkedin/Linkedin"
+import Github from "../social/Github"
+import Twitter from "../social/Twitter"
+import Instagram from "../social/Instagram"
 
 function NavSocial() {
   return (
@@ -13,17 +16,17 @@ function NavSocial() {
         </li>
         <li>
           <a href="https://www.google.es">
-            <Linkedin />
+            <Github />
           </a>
         </li>
         <li>
           <a href="https://www.google.es">
-            <Linkedin />
+            <Twitter />
           </a>
         </li>
         <li>
           <a href="https://www.google.es">
-            <Linkedin />
+            <Instagram />
           </a>
         </li>
       </ul>

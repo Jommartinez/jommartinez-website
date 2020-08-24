@@ -8,7 +8,7 @@ function SectionTitleLeft() {
       <div className="wrapper">
         <div className="blockTitle">
           <h2>Frontend developer_</h2>
-          <Link to="/">
+          <Link to="/servicios/#frontend-developer">
             <span>cuéntame más</span>
             <span className="icon">+</span>
           </Link>

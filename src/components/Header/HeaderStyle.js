@@ -3,7 +3,7 @@ export const HeaderStyled = styled.section`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 999;
   padding: 1rem 0;
   background: var(--dark);
   color: var(--light);

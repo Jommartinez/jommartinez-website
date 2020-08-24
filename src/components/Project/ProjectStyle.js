@@ -4,17 +4,12 @@ export const ProjectStyled = styled.article`
   flex: 0 0 100%;
   position: relative;
   overflow: hidden;
-  &:last-child {
-    display: none;
-  }
+
   @media screen and (min-width: 576px) {
-    flex: 0 0 50%;
+    flex: 0 0 calc(100% / 2);
   }
   @media screen and (min-width: 768px) {
-    flex: 0 0 33%;
-    &:last-child {
-      display: block;
-    }
+    flex: 0 0 calc(100% / 3);
   }
   img {
     width: 100%;

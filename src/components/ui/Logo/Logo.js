@@ -1,11 +1,14 @@
 import React from "react"
 import { LogoStyled } from "./LogoStyle"
 import LogoSvg from "../svg/LogoSvg"
+import { Link } from "gatsby"
 
 function Logo() {
   return (
     <LogoStyled>
-      <LogoSvg />
+      <Link to="/">
+        <LogoSvg />
+      </Link>
     </LogoStyled>
   )
 }

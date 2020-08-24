@@ -1,7 +1,7 @@
 import React from "react"
 import { FooterStyled } from "./FooterStyle"
 import NavSocial from "../ui/NavSocial"
-
+import moment from "moment"
 function Footer() {
   return (
     <FooterStyled id="contact">
@@ -12,13 +12,15 @@ function Footer() {
             <br /> ¡Comencemos un proyecto juntos!
           </p>
           <p>
-            <a href="mailto:contact@jommartinez.com">contact@jommartinez.com</a>
+            <a href="mailto:hello@jommartinez.com">hello@jommartinez.com</a>
             <br />
             Madrid
             <br />
-            17:33_07/07/2020_
+            {moment().format("HH:mm_DD/MM/YYYY_")}
           </p>
-          <p className="legal">© 2020 - Todos los derechos reservados.</p>
+          <p className="legal">
+            © {moment().format("YYYY")} - Todos los derechos reservados.
+          </p>
         </div>
         <NavSocial />
       </div>

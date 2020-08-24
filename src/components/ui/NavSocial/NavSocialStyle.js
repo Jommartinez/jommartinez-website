@@ -8,10 +8,10 @@ export const NavSocialStyled = styled.div`
       margin-right: 0.75rem;
       a {
         svg {
-          border: 1px solid var(--light);
-          border-radius: 100%;
-          fill: var(--light);
-          width: 2rem;
+          width: 2.188rem;
+          .backcolor {
+            fill: var(--light);
+          }
         }
         text-decoration: none;
       }

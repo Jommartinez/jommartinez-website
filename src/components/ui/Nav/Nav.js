@@ -10,23 +10,23 @@ function Nav() {
       { autoAlpha: 0, y: 20 },
       { y: 0, autoAlpha: 1, duration: 0.35, stagger: 0.3 }
     )
-  })
+  }, [])
 
   return (
     <NavStyled>
       <p>menú_</p>
       <ul>
         <li>
-          <Link to="/">servicios_</Link>
+          <Link to="/servicios">servicios_</Link>
         </li>
         <li>
-          <Link to="/">proyectos_</Link>
+          <Link to="/proyectos">proyectos_</Link>
         </li>
         <li>
-          <Link to="/">sobre mí_</Link>
+          <Link to="/sobre-mi">sobre mí_</Link>
         </li>
         <li>
-          <Link to="/">contacto_</Link>
+          <a href="#contact">contacto_</a>
         </li>
       </ul>
     </NavStyled>
