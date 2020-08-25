@@ -1,14 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import { ProjectsHomeStyled } from "./ProjectsHomeStyle"
 import Project from "../Project/Project"
-
-function ProjectsHome() {
+import useProyectos from "../../hooks/useProyectosHome"
+const ProjectsHome = () => {
+  const resultado = useProyectos()
+  const [proyectos] = useState(resultado)
   return (
     <ProjectsHomeStyled>
       <div className="wrapper">
-        <Project />
-        <Project />
-        <Project />
+        {proyectos.map(proyecto => (
+          <Project key={proyecto.id} proyecto={proyecto} />
+        ))}
       </div>
     </ProjectsHomeStyled>
   )

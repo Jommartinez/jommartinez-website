@@ -1,20 +1,25 @@
 import React from "react"
 import { ProjectStyled } from "./ProjectStyle"
 import imageProject from "../../images/project.jpg"
+import { Link } from "gatsby"
 
-function Project() {
+const Project = ({ proyecto }) => {
+  const { slug, titulo } = proyecto
+  console.log(proyecto)
   return (
     <ProjectStyled>
-      <img src={imageProject} alt="cabecera de sección" />
-      <div className="cover">
-        <div className="mask"></div>
-        <div className="content">
-          <p>
-            desarrollo web
-            <span>LG Electrónica</span>
-          </p>
+      <Link to={slug}>
+        <img src={imageProject} alt={slug} />
+        <div className="cover">
+          <div className="mask"></div>
+          <div className="content">
+            <p>
+              desarrollo web
+              <span>{titulo}</span>
+            </p>
+          </div>
         </div>
-      </div>
+      </Link>
     </ProjectStyled>
   )
 }

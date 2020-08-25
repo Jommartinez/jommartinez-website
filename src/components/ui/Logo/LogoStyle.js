@@ -4,7 +4,7 @@ export const LogoStyled = styled.div`
   svg {
     width: 20px;
     .color-logo {
-      fill: var(--light);
+      stroke: var(--light);
     }
     @media screen and (min-width: 768px) {
       width: 32px;
