@@ -45,18 +45,20 @@ const textFront = `
 `
 const textWp = `
 <p>
-  <strong>wordpress</strong>
+  <strong>Tema a medida</strong>
 </p>
 <p>
-  ¿Desarrollar respetando todos y cada uno de los píxeles que aparecen
-  en el diseño inicial? ¡Claro que es posible! Para lograr un buen
-  resultado de maquetación y no tirar por tierra el trabajo realizado
-  por el diseñador utilizo inVision, una aplicación web que me permite
-  importar diseños desde Photoshop y Sketch para comprobar medidas,
-  exportar imágenes y símbolos, consultar los colores, etc. Así puedo
-  elaborar un desarrollo fiel, evitando sorpresas de “esto no es lo
-  que te pedí” o “no se parece en nada a la propuesta inicial”.
+  Los sitios de WordPress que desarrollo están hechos a medida para el cliente final. No compro temas Premium. Esto ahorra tiempo en términos de desarrollo y flexibilidad para responder mejor a los problemas de UX / UI.
 </p>
+<p>Las plantillas puede que estén muy bien y ayuden a más de uno de salir del paso a la hora de crear una página web, pero al fin y al cabo son eso, plantillas con un desarrollo preestablecido que cualquiera puede comprar o descargar gratuitamente y que tarde o temprano nos pondrá limitaciones. Así que para evitar problemas, ¡nada de plantillas! </p>
+<p>Yo me encargo de crear y desarrollar todo desde 0, lo que me permite tener un completo control del sitio WordPress y mayor flexibilidad para responder a los problemas de UX/UI. Mis desarrollos están hechos a medida para el cliente final, adaptándomela así a sus necesidades y objetivos.
+</p>
+<p>
+  <strong>Backoffice intuitivo</strong>
+</p>
+  <p>¿Por qué reinventar la rueda? Para editar el contenido o administrar funciones más avanzadas, utilizo extensiones que a largo de los tiempos ya han demostrado su valía en la comunidad de WordPress. Su uso garantiza la seguridad del usuario y un manejo rápido gracias a su interfaz intuitiva.</p>
+<p><strong>Desarrollo de Plugins</strong></p>
+<p>Para atender solicitudes específicas, a veces es necesario desarrollar Plugins, que son una forma limpia y amigable de WordPress para darle superpoderes a tu tema. Por ejemplo, es posible que necesites un sistema de cotizaciones o un gestor de reseñas, pues se desarrolla un plugin capaz de responder ante estas necesidades. </p>
 `
 const IndexPage = () => (
   <Layout>

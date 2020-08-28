@@ -19,7 +19,7 @@ const useProyectos = () => {
       }
     `
   )
-  // console.log(datos);
+
   return datos.allWordpressWpJmProyectos.nodes.map(proyecto => ({
     titulo: proyecto.title,
     slug: proyecto.slug,

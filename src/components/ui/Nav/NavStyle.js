@@ -18,7 +18,7 @@ export const NavStyled = styled.nav`
   .menu-m {
     display: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .menu-m {
       z-index: 999;
       position: relative;
@@ -29,7 +29,17 @@ export const NavStyled = styled.nav`
     display: flex;
     list-style: none;
 
-    @media (max-width: 768px) {
+    @media screen and (min-width: 992px) {
+      display: flex;
+    }
+    li {
+      margin-right: 2.5rem;
+      a {
+        text-decoration: none;
+        color: var(--light);
+      }
+    }
+    @media screen and (max-width: 991px) {
       display: flex;
       position: fixed;
       z-index: 9;
@@ -45,14 +55,42 @@ export const NavStyled = styled.nav`
       opacity: 1;
       left: 105%;
     }
-    @media screen and (min-width: 992px) {
-      display: flex;
+    @media screen and (max-width: 575px) {
+      li {
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-family: var(--butler);
+          font-size: 1.875rem;
+          color: transparent;
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: var(--light);
+          &.current {
+            -webkit-text-stroke-color: var(--yellow);
+          }
+        }
+      }
     }
-    li {
-      margin-right: 2.5rem;
-      a {
-        text-decoration: none;
-        color: var(--light);
+    @media screen and (min-width: 576px) and (max-width: 991px) {
+      li {
+        margin-right: 0;
+        margin-bottom: 1.875rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          font-family: var(--butler);
+          font-size: 3.125rem;
+          color: transparent;
+          -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: var(--light);
+          &.current {
+            -webkit-text-stroke-color: var(--yellow);
+          }
+        }
       }
     }
   }

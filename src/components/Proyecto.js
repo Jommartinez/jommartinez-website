@@ -84,7 +84,6 @@ const Proyecto = ({
   },
 }) => {
   const { title, content, acf, featured_media } = nodes[0]
-  console.log(acf.cover_image.localFile.childImageSharp.fluid)
   return (
     <Layout>
       <HeroTextProject>
@@ -160,7 +159,7 @@ const Proyecto = ({
         <p className="url-project">
           <strong>Échale un vistazo a la web: </strong>
           <strong>
-            <a target="_blank" href={acf.url}>
+            <a target="_blank" href={acf.url} rel="noreferrer">
               {acf.url}
             </a>
           </strong>
