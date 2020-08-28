@@ -6,6 +6,13 @@ export const BgWhitoutTitleStyled = styled.section`
   align-items: center;
   overflow: hidden;
   height: 205px;
+  .wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   @media screen and (min-width: 768px) {
     height: 273px;
   }

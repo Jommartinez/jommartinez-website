@@ -33,6 +33,15 @@ export default function Layout({ children }) {
             padding: 0;
             box-sizing: border-box;
           }
+          html {
+            scroll-behavior: smooth;
+          }
+          body {
+            overflow-x: hidden;
+          }
+          body.hide {
+            overflow: hidden;
+          }
           :root {
             --dark: #333a3f;
             --light: #f6f6f7;

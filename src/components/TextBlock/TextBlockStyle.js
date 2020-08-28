@@ -6,6 +6,10 @@ export const TextBlockStyled = styled.section`
   font-family: var(--manrope);
   font-size: var(--fontSizeP);
   padding: 2.188rem 0;
+  a {
+    color: var(--yellow);
+    text-decoration: none;
+  }
   @media screen and (min-width: 576px) {
     padding: 2.5rem 0;
   }

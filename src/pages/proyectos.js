@@ -17,9 +17,8 @@ const IndexPage = () => (
         estructura… pero ¿a quién vamos a engañar? Aquí habéis venido a ver
         webs, a descubrir cómo son esos proyectos a los que de alguna forma “he
         dado la vida”.
-        <br />
-        Aquí tenéis algunos de mis trabajos. ¡Espero que os gusten!
       </p>
+      <p>Aquí tenéis algunos de mis trabajos. ¡Espero que os gusten!</p>
     </HeroText>
     <ProjectsHome />
   </Layout>

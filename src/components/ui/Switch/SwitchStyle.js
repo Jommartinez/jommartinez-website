@@ -9,6 +9,8 @@ export const SwitchStyled = styled.div`
     margin-left: 1.5rem;
     position: relative;
     cursor: pointer;
+    z-index: 999;
+    position: relative;
     @media screen and (min-width: 768px) {
       width: 46px;
       height: 20px;

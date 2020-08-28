@@ -1,6 +1,8 @@
 import styled from "@emotion/styled"
 
 export const LogoStyled = styled.div`
+  z-index: 999;
+  position: relative;
   svg {
     width: 20px;
     .color-logo {

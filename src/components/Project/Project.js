@@ -8,7 +8,7 @@ const Project = ({ proyecto }) => {
   console.log(proyecto)
   return (
     <ProjectStyled>
-      <Link to={slug}>
+      <Link to={`http://localhost:8000/${slug}`}>
         <img src={imageProject} alt={slug} />
         <div className="cover">
           <div className="mask"></div>

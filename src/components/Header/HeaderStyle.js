@@ -13,6 +13,7 @@ export const HeaderStyled = styled.section`
     justify-content: space-between;
     align-items: center;
   }
+
   @media screen and (min-width: 768px) {
     padding: 2rem 0;
   }
