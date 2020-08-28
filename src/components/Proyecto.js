@@ -98,7 +98,7 @@ const Proyecto = ({
         alt={acf.cover_image.alt_text}
       />
       <TextBlockPb0>
-        <p
+        <div
           className="description-project"
           dangerouslySetInnerHTML={{ __html: content }}
         />
@@ -115,7 +115,7 @@ const Proyecto = ({
             <p>
               <strong>Detalles del proyecto</strong>
             </p>
-            <p
+            <div
               className="detail"
               dangerouslySetInnerHTML={{ __html: acf.detail }}
             />
