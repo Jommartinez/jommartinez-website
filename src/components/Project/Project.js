@@ -1,13 +1,17 @@
 import React from "react"
 import { ProjectStyled } from "./ProjectStyle"
 import imageProject from "../../images/project.jpg"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Project = ({ proyecto }) => {
   const { slug, titulo } = proyecto
   return (
     <ProjectStyled>
-      <Link to={`https://distracted-fermat-b7befd.netlify.app/${slug}`}>
+      <AniLink
+        paintDrip
+        hex="#f5b133"
+        to={`https://distracted-fermat-b7befd.netlify.app/${slug}`}
+      >
         <img src={imageProject} alt={slug} />
         <div className="cover">
           <div className="mask"></div>
@@ -18,7 +22,7 @@ const Project = ({ proyecto }) => {
             </p>
           </div>
         </div>
-      </Link>
+      </AniLink>
     </ProjectStyled>
   )
 }

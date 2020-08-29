@@ -37,6 +37,15 @@ export const NavStyled = styled.nav`
       a {
         text-decoration: none;
         color: var(--light);
+        transition: all 0.35s ease-in-out;
+        &.current {
+          color: var(--yellow);
+        }
+        &:hover {
+          span {
+            color: var(--yellow);
+          }
+        }
       }
     }
     @media screen and (max-width: 991px) {

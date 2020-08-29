@@ -1,6 +1,6 @@
 import React from "react"
 import { SectionTitleLeftStyled } from "./SectionTitleLeftStyle"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function SectionTitleLeft() {
   return (
@@ -8,10 +8,10 @@ function SectionTitleLeft() {
       <div className="wrapper">
         <div className="blockTitle">
           <h2>Frontend developer_</h2>
-          <Link to="/servicios/#frontend-developer">
+          <AniLink paintDrip hex="#f5b133" to="/servicios/#frontend-developer">
             <span>cuéntame más</span>
             <span className="icon">+</span>
-          </Link>
+          </AniLink>
         </div>
         <p>
           Desarrollo tu producto desde el concepto visual hasta una web

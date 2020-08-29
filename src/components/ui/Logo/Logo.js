@@ -1,14 +1,14 @@
 import React from "react"
 import { LogoStyled } from "./LogoStyle"
 import LogoSvg from "../svg/LogoSvg"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function Logo() {
   return (
     <LogoStyled>
-      <Link to="/">
+      <AniLink paintDrip hex="#f5b133" to="/">
         <LogoSvg />
-      </Link>
+      </AniLink>
     </LogoStyled>
   )
 }

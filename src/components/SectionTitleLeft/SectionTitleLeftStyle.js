@@ -41,6 +41,7 @@ export const SectionTitleLeftStyled = styled.section`
     display: flex;
     margin-top: 0.938rem;
     margin-bottom: 0.938rem;
+
     @media screen and (min-width: 576px) {
       margin-top: 1.375rem;
       margin-bottom: 1.375rem;
@@ -64,7 +65,7 @@ export const SectionTitleLeftStyled = styled.section`
       width: 120px;
       font-size: 0.75rem;
       border-radius: 25px 0 0 25px;
-      background-color: var(--light);
+      transition: all 0.35s ease-in-out;
       @media screen and (min-width: 576px) {
         font-size: 0.938rem;
         height: 34px;
@@ -113,6 +114,17 @@ export const SectionTitleLeftStyled = styled.section`
           width: 61px;
           font-size: 2.25rem;
           margin-left: 10px;
+        }
+      }
+    }
+    &:hover {
+      span {
+        background-color: var(--yellow);
+
+        &.icon {
+          background-color: var(--dark);
+          color: var(--yellow);
+          border: 4px solid var(--yellow);
         }
       }
     }

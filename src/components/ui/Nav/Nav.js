@@ -1,8 +1,9 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { NavStyled } from "./NavStyle"
-import { Link } from "gatsby"
+
 import { gsap } from "gsap"
 import WindowSizeListener from "react-window-size-listener"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function Nav() {
   const navToggle = e => {
@@ -39,14 +40,6 @@ function Nav() {
     }
   }
 
-  useEffect(() => {
-    gsap.fromTo(
-      "nav ul li",
-      { autoAlpha: 0, y: 20 },
-      { y: 0, autoAlpha: 1, duration: 0.35, stagger: 0.3 }
-    )
-  }, [])
-
   return (
     <NavStyled>
       <WindowSizeListener
@@ -69,34 +62,40 @@ function Nav() {
       </p>
       <ul>
         <li>
-          <Link
+          <AniLink
+            paintDrip
+            hex="#f5b133"
             onTouchEnd={linkClick}
             onClick={linkClick}
             activeClassName="current"
             to="/servicios"
           >
-            servicios_
-          </Link>
+            servicios<span>_</span>
+          </AniLink>
         </li>
         <li>
-          <Link
+          <AniLink
+            paintDrip
+            hex="#f5b133"
             onTouchEnd={linkClick}
             onClick={linkClick}
             activeClassName="current"
             to="/proyectos"
           >
-            proyectos_
-          </Link>
+            proyectos<span>_</span>
+          </AniLink>
         </li>
         <li>
-          <Link
+          <AniLink
+            paintDrip
+            hex="#f5b133"
             onTouchEnd={linkClick}
             onClick={linkClick}
             activeClassName="current"
             to="/sobre-mi"
           >
-            sobre mí_
-          </Link>
+            sobre mí<span>_</span>
+          </AniLink>
         </li>
         <li>
           <a
@@ -104,7 +103,7 @@ function Nav() {
             onClick={linkClickAnchor}
             href="#contact"
           >
-            contacto_
+            contacto<span>_</span>
           </a>
         </li>
       </ul>

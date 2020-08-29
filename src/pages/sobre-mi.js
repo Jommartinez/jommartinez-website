@@ -63,8 +63,10 @@ const IndexPage = () => (
       </p>
       <p>
         Aparte de toda esta parrafada, también puedes descargarte mi{" "}
-        <a href={`../../cv.pdf`}>CV</a> y conocer mejor mi trayectoria
-        profesional :)
+        <strong>
+          <a href={`../../cv.pdf`}>CV</a>
+        </strong>{" "}
+        y conocer mejor mi trayectoria profesional :)
       </p>
     </TextBlock>
   </Layout>

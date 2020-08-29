@@ -1,6 +1,6 @@
 import React from "react"
 import { SectionTitleRightStyled } from "./SectionTitleRightStyle"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 function SectionTitleRight() {
   return (
@@ -16,10 +16,10 @@ function SectionTitleRight() {
 
         <div className="blockTitle">
           <h2>WordPress developer_</h2>
-          <Link to="/servicios/#wordpress-developer">
+          <AniLink paintDrip hex="#f5b133" to="/servicios/#wordpress-developer">
             <span>cuéntame más</span>
             <span className="icon">+</span>
-          </Link>
+          </AniLink>
         </div>
       </div>
     </SectionTitleRightStyled>

@@ -1,8 +1,12 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { FooterStyled } from "./FooterStyle"
 import NavSocial from "../ui/NavSocial"
 import moment from "moment"
 function Footer() {
+  const [timer, setTimer] = useState(moment().format("HH:mm:ss_DD/MM/YYYY_"))
+  setInterval(() => {
+    setTimer(moment().format("HH:mm:ss_DD/MM/YYYY_"))
+  }, 1000)
   return (
     <FooterStyled id="contact">
       <div className="wrapper">
@@ -16,7 +20,7 @@ function Footer() {
             <br />
             Madrid
             <br />
-            {moment().format("HH:mm_DD/MM/YYYY_")}
+            {timer}
           </p>
           <p className="legal">
             © {moment().format("YYYY")} - Todos los derechos reservados.

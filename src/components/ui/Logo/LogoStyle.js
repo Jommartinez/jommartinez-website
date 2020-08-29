@@ -7,6 +7,12 @@ export const LogoStyled = styled.div`
     width: 20px;
     .color-logo {
       stroke: var(--light);
+      transition: all 0.35s ease-in-out;
+    }
+    &:hover {
+      .color-logo {
+        stroke: var(--yellow);
+      }
     }
     @media screen and (min-width: 768px) {
       width: 32px;

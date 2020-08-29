@@ -42,6 +42,10 @@ export const FooterStyled = styled.section`
   a {
     color: var(--light);
     text-decoration: none;
+    transition: all 0.35s ease-in-out;
+    &:hover {
+      color: var(--yellow);
+    }
   }
   .content {
     p {

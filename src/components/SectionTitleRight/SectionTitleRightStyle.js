@@ -71,6 +71,7 @@ export const SectionTitleRightStyled = styled.section`
       font-size: 0.75rem;
       border-radius: 25px 0 0 25px;
       background-color: var(--light);
+      transition: all 0.35s ease-in-out;
       @media screen and (min-width: 576px) {
         font-size: 0.938rem;
         height: 34px;
@@ -119,6 +120,17 @@ export const SectionTitleRightStyled = styled.section`
           width: 61px;
           font-size: 2.25rem;
           margin-left: 10px;
+        }
+      }
+    }
+    &:hover {
+      span {
+        background-color: var(--yellow);
+
+        &.icon {
+          background-color: var(--dark);
+          color: var(--yellow);
+          border: 4px solid var(--yellow);
         }
       }
     }
