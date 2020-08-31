@@ -4,9 +4,13 @@ import NavSocial from "../ui/NavSocial"
 import moment from "moment"
 function Footer() {
   const [timer, setTimer] = useState(moment().format("HH:mm:ss_DD/MM/YYYY_"))
-  setInterval(() => {
-    setTimer(moment().format("HH:mm:ss_DD/MM/YYYY_"))
-  }, 1000)
+
+  useEffect(() => {
+    setInterval(() => {
+      setTimer(moment().format("HH:mm:ss_DD/MM/YYYY_"))
+    }, 1000)
+  }, [timer])
+
   return (
     <FooterStyled id="contact">
       <div className="wrapper">

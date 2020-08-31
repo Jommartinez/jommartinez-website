@@ -12,12 +12,11 @@ function Nav() {
         e.target.classList.add("active")
         e.target.innerHTML = "cerrar_"
         gsap.set("nav ul", { left: "105%" })
-        gsap.to("nav ul", 0.35, { left: "-2rem" })
+        gsap.to("nav ul", 0.35, { left: "0" })
         document.body.classList.add("hide")
       } else {
         e.target.classList.remove("active")
         e.target.innerHTML = "menú_"
-        gsap.set("nav ul", { left: "105%" })
         gsap.to("nav ul", 0.35, { left: "105%" })
         document.body.classList.remove("hide")
       }

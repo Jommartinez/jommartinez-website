@@ -23,6 +23,7 @@ export const NavStyled = styled.nav`
       z-index: 999;
       position: relative;
       display: block;
+      cursor: pointer;
     }
   }
   ul {
@@ -74,10 +75,13 @@ export const NavStyled = styled.nav`
         a {
           font-family: var(--butler);
           font-size: 1.875rem;
+          line-height: 3rem;
+          padding: 1rem 0;
           color: transparent;
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: var(--light);
           &.current {
+            color: transparent;
             -webkit-text-stroke-color: var(--yellow);
           }
         }
@@ -93,10 +97,13 @@ export const NavStyled = styled.nav`
         a {
           font-family: var(--butler);
           font-size: 3.125rem;
+          line-height: 4.5rem;
+          padding: 0.5rem 0;
           color: transparent;
           -webkit-text-stroke-width: 2px;
           -webkit-text-stroke-color: var(--light);
           &.current {
+            color: transparent;
             -webkit-text-stroke-color: var(--yellow);
           }
         }

@@ -12,6 +12,7 @@ const useProyectos = () => {
             slug
             wordpress_id
             acf {
+              category
               show_in_cover
             }
           }
@@ -24,6 +25,7 @@ const useProyectos = () => {
     titulo: proyecto.title,
     slug: proyecto.slug,
     id: proyecto.wordpress_id,
+    categoria: proyecto.acf.category,
     enPortada: proyecto.acf.show_in_cover,
   }))
 }

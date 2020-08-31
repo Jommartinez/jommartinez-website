@@ -83,7 +83,7 @@ const Proyecto = ({
     allWordpressWpJmProyectos: { nodes, edges },
   },
 }) => {
-  const { title, content, acf, featured_media } = nodes[0]
+  const { title, content, acf } = nodes[0]
   return (
     <Layout>
       <HeroTextProject>

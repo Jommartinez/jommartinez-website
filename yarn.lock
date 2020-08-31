@@ -3677,6 +3677,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
@@ -11397,6 +11402,11 @@ react-clientside-effect@^1.2.2:
   integrity sha512-nRmoyxeok5PBO6ytPvSjKp9xwXg9xagoTK1mMjwnQxqM9Hd7MNPl+LS1bOSOe+CV2+4fnEquc7H/S8QD3q697A==
   dependencies:
     "@babel/runtime" "^7.0.0"
+
+react-custom-scroller@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-custom-scroller/-/react-custom-scroller-1.0.0.tgz#44828226ab7d21a5a316c1a3aaedca608cd56c1d"
+  integrity sha512-BvarENOfD5EMvI10h2uQ5+vfPioPlNYyIT0GYsJQvtpUsRBfDxG3f8ZeW623fdlwQe3WhdktXg/cszBqOdPLJA==
 
 react-dev-utils@^4.2.3:
   version "4.2.3"

@@ -4,7 +4,7 @@ import imageProject from "../../images/project.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Project = ({ proyecto }) => {
-  const { slug, titulo } = proyecto
+  const { slug, titulo, categoria } = proyecto
   return (
     <ProjectStyled>
       <AniLink paintDrip hex="#f5b133" to={`/${slug}`}>
@@ -13,7 +13,7 @@ const Project = ({ proyecto }) => {
           <div className="mask"></div>
           <div className="content">
             <p>
-              desarrollo web
+              {categoria}
               <span>{titulo}</span>
             </p>
           </div>

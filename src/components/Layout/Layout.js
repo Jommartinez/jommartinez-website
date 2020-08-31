@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import Header from "../Header"
 import Footer from "../Footer"
+import Cursor from "../ui/Cursor"
 import { Global, css } from "@emotion/core"
 import "./layout.css"
 
@@ -38,6 +39,7 @@ export default function Layout({ children }) {
           }
           body {
             overflow-x: hidden;
+            cursor: none;
           }
           body.hide {
             overflow: hidden;
@@ -138,12 +140,16 @@ export default function Layout({ children }) {
               display: block;
             }
           }
+          .tl-wrapper-status--entered {
+            transform: none !important;
+          }
         `}
       />
       <div className={`website ${mainClass}`}>
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
         <main>{children}</main>
         <Footer />
+        <Cursor />
       </div>
     </>
   )
