@@ -1,14 +1,17 @@
 import React from "react"
 import { ProjectStyled } from "./ProjectStyle"
-import imageProject from "../../images/project.jpg"
+import Img from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Project = ({ proyecto }) => {
-  const { slug, titulo, categoria } = proyecto
+  const { slug, titulo, categoria, featured_media } = proyecto
   return (
     <ProjectStyled>
       <AniLink paintDrip hex="#f5b133" to={`/${slug}`}>
-        <img src={imageProject} alt={slug} />
+        <Img
+          alt={featured_media.alt_text}
+          fluid={featured_media.localFile.childImageSharp.fluid}
+        />
         <div className="cover">
           <div className="mask"></div>
           <div className="content">

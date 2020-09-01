@@ -15,6 +15,16 @@ const useProyectos = () => {
               category
               show_in_cover
             }
+            featured_media {
+              localFile {
+                childImageSharp {
+                  fluid(maxWidth: 510) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              alt_text
+            }
           }
         }
       }
@@ -27,6 +37,7 @@ const useProyectos = () => {
     id: proyecto.wordpress_id,
     categoria: proyecto.acf.category,
     enPortada: proyecto.acf.show_in_cover,
+    featured_media: proyecto.featured_media,
   }))
 }
 

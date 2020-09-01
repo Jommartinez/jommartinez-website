@@ -54,16 +54,6 @@ export const query = graphql`
             }
           }
         }
-        featured_media {
-          localFile {
-            childImageSharp {
-              fluid(maxWidth: 510) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          alt_text
-        }
         content
       }
     }
