@@ -42,16 +42,7 @@ export const query = graphql`
               }
             }
           }
-          project_image_one_finish {
-            alt_text
-            localFile {
-              childImageSharp {
-                fluid(maxWidth: 1510) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
+
           cover_image {
             alt_text
             localFile {
@@ -146,13 +137,6 @@ const Proyecto = ({
               </div>
             ))}
         </div>
-
-        {acf.project_image_one_finish && (
-          <Img
-            alt={acf.project_image_one_finish.alt_text}
-            fluid={acf.project_image_one_finish.localFile.childImageSharp.fluid}
-          />
-        )}
       </ImagesProjectStyled>
 
       <TextBlock>
