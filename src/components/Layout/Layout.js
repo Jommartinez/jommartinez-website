@@ -6,24 +6,35 @@ import { Global, css } from "@emotion/core"
 import "./layout.css"
 
 export default function Layout({ children }) {
-  const [darkMode, setDarkMode] = useState(false)
-  const [checked, setChecked] = useState(false)
+  const [darkMode, setDarkMode] = useState(getInitialMode())
   const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
 
-  function changeMedia(mq) {
-    setDarkMode(mq.matches)
-    setChecked(mq.matches)
+  React.useEffect(() => {
+    localStorage.setItem("dark", JSON.stringify(darkMode))
+  }, [darkMode])
+
+  function getInitialMode() {
+    const isReturningUser = "dark" in localStorage
+    const savedMode = JSON.parse(localStorage.getItem("dark"))
+    const userPrefersDark = getPrefColorScheme()
+
+    // if mode was saved --> dark / light
+    if (isReturningUser) {
+      return savedMode
+      // if preferred color scheme is dark --> dark
+    } else if (userPrefersDark) {
+      return true
+      // otherwise --> light
+    } else {
+      return false
+    }
+    // return savedMode || false;
   }
 
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-color-scheme: dark)")
-    mq.addListener(changeMedia)
-    setDarkMode(mq.matches)
-    setChecked(mq.matches)
-    return () => {
-      mq.removeListener(changeMedia)
-    }
-  }, [])
+  function getPrefColorScheme() {
+    if (!window.matchMedia) return
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+  }
 
   return (
     <>
@@ -127,13 +138,7 @@ export default function Layout({ children }) {
               max-width: 1602px;
             }
           }
-          @media (prefers-color-scheme: dark) {
-            :root {
-              --dark: #333a3f;
-              --light: #f6f6f7;
-              --yellow: #f5b133;
-            }
-          }
+
           body {
             background-color: var(--dark);
             img {
