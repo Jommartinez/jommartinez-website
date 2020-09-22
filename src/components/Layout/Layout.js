@@ -9,10 +9,11 @@ export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(getInitialMode())
   const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
 
-  if (typeof window !== "undefined") {
-    localStorage.setItem("dark", JSON.stringify(darkMode))
-  }
-  React.useEffect(() => {
+  useEffect(() => {
+    getInitialMode()
+  }, [])
+
+  useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode))
   }, [darkMode])
 
