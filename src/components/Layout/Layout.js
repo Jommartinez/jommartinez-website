@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   }, [darkMode])
 
   function getInitialMode() {
-    if (window) {
+    if (typeof window !== "undefined") {
       const isReturningUser = "dark" in localStorage
       const savedMode = JSON.parse(localStorage.getItem("dark"))
       const userPrefersDark = getPrefColorScheme()
