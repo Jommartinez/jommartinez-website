@@ -10,10 +10,6 @@ export default function Layout({ children }) {
   const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
 
   useEffect(() => {
-    getInitialMode()
-  }, [])
-
-  useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode))
   }, [darkMode])
 
