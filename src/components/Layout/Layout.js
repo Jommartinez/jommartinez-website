@@ -7,7 +7,6 @@ import "./layout.css"
 
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(getInitialMode())
-  const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
 
   useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode))
@@ -152,7 +151,7 @@ export default function Layout({ children }) {
           }
         `}
       />
-      <div className={`website ${mainClass}`}>
+      <div className={`website ${darkMode ? "is-dark-mode" : "is-light-mode"}`}>
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
         <main>{children}</main>
         <Footer />
