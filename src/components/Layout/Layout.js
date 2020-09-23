@@ -7,9 +7,12 @@ import "./layout.css"
 
 export default function Layout({ children }) {
   const [darkMode, setDarkMode] = useState(getInitialMode())
+  const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
 
   useEffect(() => {
-    localStorage.setItem("dark", JSON.stringify(darkMode))
+    if (typeof window !== "undefined") {
+      localStorage.setItem("dark", JSON.stringify(darkMode))
+    }
   }, [darkMode])
 
   function getInitialMode() {
@@ -18,16 +21,17 @@ export default function Layout({ children }) {
       const savedMode = JSON.parse(localStorage.getItem("dark"))
       const userPrefersDark = getPrefColorScheme()
 
+      // if mode was saved --> dark / light
       if (isReturningUser) {
-        console.log("control savemode")
         return savedMode
+        // if preferred color scheme is dark --> dark
       } else if (userPrefersDark) {
-        console.log("control user")
         return true
+        // otherwise --> light
       } else {
-        console.log("nada")
         return false
       }
+      // return savedMode || false;
     }
   }
 
@@ -150,7 +154,7 @@ export default function Layout({ children }) {
           }
         `}
       />
-      <div className={`website ${darkMode ? "is-dark-mode" : "is-light-mode"}`}>
+      <div className={`website ${mainClass}`}>
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
         <main>{children}</main>
         <Footer />
