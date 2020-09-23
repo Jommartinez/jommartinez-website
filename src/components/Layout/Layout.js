@@ -10,7 +10,6 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode))
-    getInitialMode()
   }, [darkMode])
 
   function getInitialMode() {
@@ -19,17 +18,16 @@ export default function Layout({ children }) {
       const savedMode = JSON.parse(localStorage.getItem("dark"))
       const userPrefersDark = getPrefColorScheme()
 
-      // if mode was saved --> dark / light
       if (isReturningUser) {
+        console.log("control savemode")
         return savedMode
-        // if preferred color scheme is dark --> dark
       } else if (userPrefersDark) {
+        console.log("control user")
         return true
-        // otherwise --> light
       } else {
+        console.log("nada")
         return false
       }
-      // return savedMode || false;
     }
   }
 
