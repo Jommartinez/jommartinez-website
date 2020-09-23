@@ -10,9 +10,7 @@ export default function Layout({ children }) {
   const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("dark", JSON.stringify(darkMode))
-    }
+    localStorage.setItem("dark", JSON.stringify(darkMode))
   }, [darkMode])
 
   function getInitialMode() {
@@ -32,6 +30,8 @@ export default function Layout({ children }) {
         return false
       }
       // return savedMode || false;
+    } else {
+      return true
     }
   }
 
