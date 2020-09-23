@@ -10,6 +10,7 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     localStorage.setItem("dark", JSON.stringify(darkMode))
+    getInitialMode()
   }, [darkMode])
 
   function getInitialMode() {
