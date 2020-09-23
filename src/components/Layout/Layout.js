@@ -30,8 +30,6 @@ export default function Layout({ children }) {
         return false
       }
       // return savedMode || false;
-    } else {
-      return true
     }
   }
 
