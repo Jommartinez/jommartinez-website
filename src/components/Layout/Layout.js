@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import useDarkMode from "../../helper/use-dark-mode"
 import Header from "../Header"
 import Footer from "../Footer"
 import Cursor from "../ui/Cursor"
@@ -6,39 +7,7 @@ import { Global, css } from "@emotion/core"
 import "./layout.css"
 
 export default function Layout({ children }) {
-  const [darkMode, setDarkMode] = useState(getInitialMode())
-  const mainClass = darkMode ? "is-dark-mode" : "is-light-mode"
-
-  useEffect(() => {
-    localStorage.setItem("dark", JSON.stringify(darkMode))
-  }, [darkMode])
-
-  function getInitialMode() {
-    if (typeof window !== "undefined") {
-      const isReturningUser = "dark" in localStorage
-      const savedMode = JSON.parse(localStorage.getItem("dark"))
-      const userPrefersDark = getPrefColorScheme()
-
-      // if mode was saved --> dark / light
-      if (isReturningUser) {
-        return savedMode
-        // if preferred color scheme is dark --> dark
-      } else if (userPrefersDark) {
-        return true
-        // otherwise --> light
-      } else {
-        return false
-      }
-      // return savedMode || false;
-    } else {
-      return true
-    }
-  }
-
-  function getPrefColorScheme() {
-    if (!window.matchMedia) return
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-  }
+  const [darkMode, setDarkMode] = useDarkMode()
 
   return (
     <>
@@ -154,7 +123,7 @@ export default function Layout({ children }) {
           }
         `}
       />
-      <div className={`website ${mainClass}`}>
+      <div className="website">
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
         <main>{children}</main>
         <Footer />
