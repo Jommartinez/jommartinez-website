@@ -103,7 +103,7 @@ const Proyecto = ({
           </div>
           <div className="tech-project">
             <p>
-              <strong>Tectnologías y herramientas utilizadas</strong>
+              <strong>Tecnologías y herramientas utilizadas</strong>
             </p>
             <p>{acf.technologies}</p>
           </div>
