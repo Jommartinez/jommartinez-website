@@ -6,7 +6,10 @@ export default function useMedia(queries, values, defaultValue) {
   const [value, setValue] = useState(defaultValue)
 
   //array containing a media query list for each query
-  const mediaQueryLists = queries.map(q => window.matchMedia(q))
+  const mediaQueryLists =
+    typeof window !== `undefined`
+      ? queries.map(q => window.matchMedia(q))
+      : null
 
   //state update function
   const getValue = () => {
