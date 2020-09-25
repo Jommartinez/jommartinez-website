@@ -11,7 +11,13 @@ export default function Switch({ setDarkMode, darkMode }) {
 
   return (
     <SwitchStyled>
-      <div className="switch" onClick={handleClick}>
+      <div
+        className="switch"
+        onClick={handleClick}
+        onKeyDown={handleClick}
+        role="button"
+        tabIndex={0}
+      >
         <div className={`selected ${switchMoon}`}>
           {darkMode ? <Moon /> : <Sun />}
         </div>

@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 export const SwitchStyled = styled.div`
   .switch {
+    outline: none;
     border: 2px solid var(--yellow);
     border-radius: 12px;
     width: 40px;

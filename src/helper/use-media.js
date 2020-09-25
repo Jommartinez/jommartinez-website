@@ -30,6 +30,7 @@ export default function useMedia(queries, values, defaultValue) {
       //remove listeners on cleanup
       return () => mediaQueryLists.forEach(mql => mql.removeListener(handler))
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [] //empty array ensures effect is only run on mount and unmount
   )
 
