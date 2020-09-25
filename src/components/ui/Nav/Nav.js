@@ -56,7 +56,7 @@ function Nav() {
           }
         }}
       />
-      <button className="menu-m" onTouchEnd={navToggle} onKeyDown={navToggle}>
+      <button className="menu-m" onClick={navToggle}>
         menú_
       </button>
       <ul>
@@ -64,8 +64,7 @@ function Nav() {
           <AniLink
             paintDrip
             hex="#f5b133"
-            onTouchEnd={linkClick}
-            onMouseUp={linkClick}
+            onClick={linkClick}
             activeClassName="current"
             to="/servicios"
           >
@@ -76,8 +75,7 @@ function Nav() {
           <AniLink
             paintDrip
             hex="#f5b133"
-            onTouchEnd={linkClick}
-            onMouseUp={linkClick}
+            onClick={linkClick}
             activeClassName="current"
             to="/proyectos"
           >
@@ -88,8 +86,7 @@ function Nav() {
           <AniLink
             paintDrip
             hex="#f5b133"
-            onTouchEnd={linkClick}
-            onMouseUp={linkClick}
+            onClick={linkClick}
             activeClassName="current"
             to="/sobre-mi"
           >
