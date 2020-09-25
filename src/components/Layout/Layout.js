@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import useDarkMode from "../../helper/use-dark-mode"
 import Header from "../Header"
 import Footer from "../Footer"

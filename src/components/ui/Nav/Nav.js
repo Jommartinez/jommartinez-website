@@ -56,7 +56,7 @@ function Nav() {
           }
         }}
       />
-      <p className="menu-m" onClick={navToggle} onKeyDown={navToggle}>
+      <p className="menu-m" onTouchEnd={navToggle} onKeyDown={navToggle}>
         menú_
       </p>
       <ul>
@@ -65,7 +65,7 @@ function Nav() {
             paintDrip
             hex="#f5b133"
             onTouchEnd={linkClick}
-            onClick={linkClick}
+            onMouseUp={linkClick}
             activeClassName="current"
             to="/servicios"
           >
@@ -77,7 +77,7 @@ function Nav() {
             paintDrip
             hex="#f5b133"
             onTouchEnd={linkClick}
-            onClick={linkClick}
+            onMouseUp={linkClick}
             activeClassName="current"
             to="/proyectos"
           >
@@ -89,7 +89,7 @@ function Nav() {
             paintDrip
             hex="#f5b133"
             onTouchEnd={linkClick}
-            onClick={linkClick}
+            onMouseUp={linkClick}
             activeClassName="current"
             to="/sobre-mi"
           >
@@ -99,7 +99,7 @@ function Nav() {
         <li>
           <a
             onTouchEnd={linkClickAnchor}
-            onClick={linkClickAnchor}
+            onMouseUp={linkClickAnchor}
             href="#contact"
           >
             contacto<span>_</span>
