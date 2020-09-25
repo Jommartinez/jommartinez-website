@@ -56,9 +56,9 @@ function Nav() {
           }
         }}
       />
-      <p className="menu-m" onTouchEnd={navToggle} onKeyDown={navToggle}>
+      <button className="menu-m" onTouchEnd={navToggle} onKeyDown={navToggle}>
         menú_
-      </p>
+      </button>
       <ul>
         <li>
           <AniLink

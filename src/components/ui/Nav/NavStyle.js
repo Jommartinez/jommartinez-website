@@ -5,7 +5,8 @@ export const NavStyled = styled.nav`
   font-family: var(--manrope);
   @media screen and (min-width: 992px) {
     font-size: 0.938rem;
-    p {
+    p,
+    button {
       display: none;
     }
   }
@@ -15,15 +16,23 @@ export const NavStyled = styled.nav`
   @media screen and (min-width: 1920px) {
     font-size: 1.375rem;
   }
-  .menu-m {
+  .menu-m,
+  button {
     display: none;
   }
   @media (max-width: 991px) {
-    .menu-m {
+    .menu-m,
+    button {
       z-index: 999;
       position: relative;
       display: block;
       cursor: pointer;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: var(--fontSizeP);
+      font-family: var(--manrope);
+      outline: none;
     }
   }
   ul {
