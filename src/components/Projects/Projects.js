@@ -3,7 +3,7 @@ import { ProjectsStyled } from "./ProjectsStyle"
 import Project from "../Project/Project"
 import useProyectosGrid from "../../hooks/useProyectosGrid"
 const Projects = () => {
-  const resultado = useProyectos()
+  const resultado = useProyectosGrid()
   const [proyectos] = useState(resultado)
   return (
     <ProjectsStyled>

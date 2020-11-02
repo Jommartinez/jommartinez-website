@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import SeoComponent from "../components/SeoComponent"
-import ProjectsHome from "../components/ProjectsHome"
+import Projects from "../components/Projects"
 import HeroText from "../components/HeroText"
 
 const IndexPage = () => (
@@ -20,7 +20,7 @@ const IndexPage = () => (
       </p>
       <p>Aquí tenéis algunos de mis trabajos. ¡Espero que os gusten!</p>
     </HeroText>
-    <ProjectsHome />
+    <Projects />
   </Layout>
 )
 
