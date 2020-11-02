@@ -5,6 +5,7 @@ import HeroText from "../components/HeroText"
 import TextBlock from "../components/TextBlock"
 import BgWhitoutTitle from "../components/BgWhitoutTitle"
 import cabecera from "../images/cabecera.jpg"
+import cv from "../static/pdf/cv.pdf"
 const IndexPage = () => (
   <Layout>
     <SeoComponent
@@ -64,7 +65,7 @@ const IndexPage = () => (
       <p>
         Aparte de toda esta parrafada, también puedes descargarte mi{" "}
         <strong>
-          <a href={`../../cv.pdf`}>CV</a>
+          <a href={cv}>CV</a>
         </strong>{" "}
         y conocer mejor mi trayectoria profesional :)
       </p>
