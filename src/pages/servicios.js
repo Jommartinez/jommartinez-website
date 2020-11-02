@@ -63,8 +63,8 @@ const textWp = `
 const IndexPage = () => (
   <Layout>
     <SeoComponent
-      title="Titulo de servicios"
-      description="descripcion de la página de servicios"
+      title="Servicios - Jonathan Martínez"
+      description="Estos son los servicios que ofrezco en base a mis conocimientos"
     />
     <HeroText>
       <h1>Servicios_</h1>

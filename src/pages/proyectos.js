@@ -7,8 +7,8 @@ import HeroText from "../components/HeroText"
 const IndexPage = () => (
   <Layout>
     <SeoComponent
-      title="Titulo de servicios"
-      description="descripcion de la página de servicios"
+      title="Proyectos - Jonathan Martínez"
+      description="Estos son algunos de mis proyectos de desarrollo web"
     />
     <HeroText>
       <h1>Proyectos_</h1>

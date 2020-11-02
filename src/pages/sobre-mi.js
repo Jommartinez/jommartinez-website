@@ -9,8 +9,8 @@ import cv from "../static/pdf/cv.pdf"
 const IndexPage = () => (
   <Layout>
     <SeoComponent
-      title="Titulo de servicios"
-      description="descripcion de la página de servicios"
+      title="Sobre mí - Jonathan Martínez"
+      description="Esta página habla un poco sobre mi experiencia, gustos y aficiones"
     />
     <HeroText>
       <h1>Sobre mi_</h1>
@@ -65,7 +65,9 @@ const IndexPage = () => (
       <p>
         Aparte de toda esta parrafada, también puedes descargarte mi{" "}
         <strong>
-          <a href={cv}>CV</a>
+          <a rel="noreferrer" target="_blank" href={cv}>
+            CV
+          </a>
         </strong>{" "}
         y conocer mejor mi trayectoria profesional :)
       </p>

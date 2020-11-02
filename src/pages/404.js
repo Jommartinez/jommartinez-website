@@ -8,7 +8,7 @@ const NotFoundPage = () => (
   <Layout>
     <SeoComponent
       title="404: Not found"
-      description="La página que estás buscando no existe."
+      description="La página que estás buscando no existe!"
     />
     <HeroText>
       <h1>404 Not Found</h1>

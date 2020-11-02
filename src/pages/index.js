@@ -12,8 +12,8 @@ import ProjectsHome from "../components/ProjectsHome"
 const IndexPage = () => (
   <Layout>
     <SeoComponent
-      title="Titulo de la home"
-      description="descripcion de la página"
+      title="Jonathan Martínez"
+      description="Hola! Soy Jonathan Martínez y me dedico al desarrollo WordPress y frontend"
     />
     <Hero />
     <BgTitle />
